@@ -1,0 +1,16 @@
+{
+  "metadata": {"brand": "个人网站", "title": "独立开发者与产品创造者", "description": "一个注重设计、性能与长期可维护性的多语言个人网站。"},
+  "common": {"language": "切换语言", "lightMode": "切换到浅色模式", "darkMode": "切换到深色模式"},
+  "nav": {"brand": "个人网站", "primaryNav": "主导航", "about": "关于", "projects": "项目", "blog": "博客", "contact": "联系", "dashboard": "控制台", "login": "登录"},
+  "footer": {"copyright": "© {year} 个人网站。保留所有权利。", "builtWith": "由 Next.js 与 Supabase 构建"},
+  "home": {"eyebrow": "设计、代码与持续创造", "title": "把清晰的想法，做成有温度的数字产品。", "subtitle": "这里记录我的项目、文章与探索。这套基础框架已经为多语言、认证、数据安全和长期扩展做好准备。", "viewProjects": "查看项目", "aboutMe": "了解我", "cardLabel": "当前基础架构", "cardTitle": "面向真实产品，而不止是演示。", "foundation": "可靠基础", "foundationTitle": "从第一天就为成长而设计", "featureStackTitle": "现代全栈", "featureStackText": "Next.js App Router、TypeScript 与可复用的 shadcn/ui 组件。", "featureSecurityTitle": "默认安全", "featureSecurityText": "服务端认证检查、Zod 输入验证与 Supabase 行级安全策略。", "featureI18nTitle": "原生多语言", "featureI18nText": "中文、英文和日文拥有独立路由、翻译资源与 SEO 元数据。"},
+  "about": {"eyebrow": "关于", "title": "好作品始于好奇，也成于耐心。", "description": "我关注设计、工程与产品之间的交汇点，喜欢把复杂问题变成简单可靠的体验。", "body": "这里可以补充你的经历、技能、价值观与工作方式。内容层已经接入国际化，后续可直接连接 Supabase 或 Headless CMS。"},
+  "projects": {"eyebrow": "精选作品", "title": "项目与实验", "description": "展示值得分享的产品、开源工作与技术探索。", "empty": "项目内容准备中。连接数据库后，可在这里呈现真实项目。"},
+  "blog": {"eyebrow": "写作", "title": "笔记与思考", "description": "记录关于产品、设计、软件工程和持续学习的文章。", "empty": "还没有文章。下一步可以接入 MDX 或 Supabase 内容表。"},
+  "contact": {"eyebrow": "保持联系", "title": "一起做点有价值的事。", "description": "如果你有合作想法、项目机会，或只是想聊聊技术与产品，欢迎来信。", "emailMe": "发送邮件"},
+  "auth": {"brand": "个人网站", "loginTitle": "欢迎回来", "loginDescription": "登录后进入你的个人控制台。", "registerTitle": "创建账户", "registerDescription": "注册后请前往邮箱完成验证。", "forgotTitle": "找回密码", "forgotDescription": "我们会向你的邮箱发送安全的重置链接。", "resetTitle": "设置新密码", "resetDescription": "请输入一组新的安全密码。", "displayName": "显示名称", "email": "邮箱", "password": "密码", "confirmPassword": "确认密码", "passwordHint": "至少 8 个字符", "loginSubmit": "登录", "registerSubmit": "注册", "forgotSubmit": "发送重置链接", "resetSubmit": "更新密码", "forgotLink": "忘记密码？", "createLink": "创建账户", "signInLink": "已有账户？登录", "backToSignIn": "返回登录", "logout": "退出登录", "invalidField": "请检查此字段", "passwordsMismatch": "两次输入的密码不一致", "invalidForm": "请检查填写内容", "invalidCredentials": "邮箱或密码不正确", "registerFailed": "暂时无法注册，请稍后重试", "requestFailed": "暂时无法发送重置邮件", "resetFailed": "暂时无法更新密码", "notConfigured": "Supabase 尚未配置，请先设置环境变量", "unknownError": "出现未知错误，请重试", "checkEmail": "注册成功，请前往邮箱完成验证", "resetEmailSent": "如果该邮箱已注册，你将收到重置链接"},
+  "dashboard": {"brand": "个人网站", "navOverview": "概览", "navProfile": "个人资料", "navSettings": "设置", "title": "控制台", "welcome": "欢迎回来，这里是你的个人空间。", "account": "账户", "projects": "项目", "zero": "0 个", "status": "状态", "active": "已登录"},
+  "profile": {"title": "个人资料", "description": "管理公开资料与个人信息。", "cardTitle": "资料编辑", "comingSoon": "数据库已准备好。可在下一步加入头像上传与资料编辑表单。"},
+  "settings": {"title": "设置", "description": "管理语言、账户与安全偏好。", "cardTitle": "账户设置", "comingSoon": "设置区域已预留，可继续添加密码修改与 OAuth 绑定。"},
+  "notFound": {"title": "页面不存在", "description": "这个地址可能已更改，或页面尚未创建。", "home": "返回首页"}
+}

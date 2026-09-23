@@ -1,0 +1,217 @@
+You are a senior full-stack engineer and software architect.
+
+I want to build a production-ready multilingual personal website.
+
+## Tech Stack
+
+Use:
+
+- Next.js with App Router
+- TypeScript
+- React
+- Tailwind CSS
+- shadcn/ui
+- Supabase
+  - PostgreSQL
+  - Supabase Auth
+  - Supabase Storage
+  - Row Level Security
+- next-intl
+- React Hook Form
+- Zod
+- Lucide React
+- Vercel for deployment
+
+Do NOT introduce additional frameworks or dependencies unless there is a clear technical reason.
+
+## Languages
+
+The website must support:
+
+- Simplified Chinese (zh)
+- English (en)
+- Japanese (ja)
+
+Use locale-based routing:
+
+/zh/*
+/en/*
+/ja/*
+
+The default locale should be zh.
+
+All user-facing UI strings must use the internationalization system.
+
+Do NOT hardcode user-facing text inside React components.
+
+Store translations in:
+
+messages/zh.json
+messages/en.json
+messages/ja.json
+
+Japanese translations should sound natural to native Japanese users.
+Do not translate Chinese UI strings literally.
+
+## Authentication
+
+Implement authentication using Supabase Auth.
+
+Initial authentication methods:
+
+- Email/password registration
+- Email/password login
+- Logout
+- Email verification
+- Forgot password
+- Reset password
+
+Design the authentication system so Google and GitHub OAuth can be added later.
+
+Protected routes must verify authentication server-side.
+
+Do not rely exclusively on client-side route protection.
+
+## Database
+
+Use Supabase PostgreSQL.
+
+Create a profiles table associated with auth.users.
+
+profiles fields:
+
+- id UUID
+- username
+- display_name
+- avatar_url
+- bio
+- preferred_locale
+- created_at
+- updated_at
+
+Use UUIDs for identifiers.
+
+Add appropriate indexes and constraints.
+
+## Security
+
+Security is a first-class requirement.
+
+Enable Row Level Security for all user-related tables.
+
+Users should only be allowed to modify their own private data.
+
+Never expose the Supabase service-role key to the browser.
+
+Validate user input with Zod.
+
+Validate authorization server-side.
+
+Use secure server-side Supabase clients where appropriate.
+
+## Architecture
+
+Prefer:
+
+- React Server Components by default
+- Client Components only when required
+- Server Actions for mutations when appropriate
+- clear separation between UI, database and authentication logic
+- reusable components
+- strongly typed data models
+
+Avoid unnecessary abstraction.
+
+Avoid over-engineering.
+
+## UI
+
+Design style:
+
+- minimal
+- modern
+- clean
+- responsive
+- accessible
+- suitable for a developer/personal portfolio
+
+Support:
+
+- desktop
+- tablet
+- mobile
+
+Add dark mode support.
+
+Use shadcn/ui components where appropriate.
+
+Use Lucide icons.
+
+## Pages
+
+Public pages:
+
+- Home
+- About
+- Projects
+- Blog
+- Contact
+
+Authentication:
+
+- Login
+- Register
+- Forgot Password
+- Reset Password
+
+Authenticated pages:
+
+- Dashboard
+- Profile
+- Settings
+
+## Engineering requirements
+
+Use strict TypeScript.
+
+Do not use `any` unless absolutely necessary.
+
+Use environment variables for secrets.
+
+Provide meaningful error handling.
+
+Provide loading and empty states.
+
+Follow accessibility best practices.
+
+Make the site SEO friendly.
+
+Generate appropriate metadata for multilingual pages.
+
+## Important working rules
+
+Before writing code:
+
+1. Analyze the requirements.
+2. Propose the architecture.
+3. Propose the database schema.
+4. Propose the folder structure.
+5. Identify security concerns.
+6. Create an implementation plan.
+
+Do NOT generate the entire application in one response.
+
+Implement the project incrementally.
+
+For every implementation step:
+
+1. Explain what will be changed.
+2. List affected files.
+3. Implement the changes.
+4. Check TypeScript errors.
+5. Check security implications.
+6. Explain how I can test the feature.
+
+Do not modify unrelated files.
+
+When uncertain about a framework API, use the latest official documentation rather than relying on potentially outdated knowledge.
